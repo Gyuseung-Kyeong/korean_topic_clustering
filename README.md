@@ -1,13 +1,14 @@
 # 졸꾸러기 지수
-2019년 1회 빡독(2019년 02월 16일) 스피치에서 발표한 내용의 source code를 공유합니다.
+2019년 1회 빡독(2019년 02월 16일) 행사에서 스피치한 source code를 공유합니다.
 
 ## 목적
 뼈아대, 일취월장, 완공 책을 읽고 익힌 것을 일상에서 얼마나 생각하고 있는지 정량적으로 알아보기 위함.  
+
 ## 결과
 평소에 부족한 topic을 알게 되어 스스로 피드백을 할 수 있었음.
 
 ## SlideShare
-<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/uR2c6JyRIYzLKC" title="졸꾸러기 지수 (2019년 1회 빡독 스피치)" target="_blank">졸꾸러기 지수 (2019년 1회 빡독 스피치)</a> </div>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/GyuseungKyeong/2019-1-133310951" title="졸꾸러기 지수 (2019년 1회 빡독 스피치)" target="_blank">졸꾸러기 지수 (2019년 1회 빡독 스피치)</a> </div>
 
 ## References
 https://ratsgo.github.io/from%20frequency%20to%20semantics/2017/06/01/LDA/
