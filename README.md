@@ -8,7 +8,7 @@
 평소에 부족한 topic을 알게 되어 스스로 피드백을 할 수 있었음.
 
 ## SlideShare
-<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/GyuseungKyeong/2019-1-133310951" title="졸꾸러기 지수 (2019년 1회 빡독 스피치)" target="_blank">졸꾸러기 지수 (2019년 1회 빡독 스피치)</a> </div>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/GyuseungKyeong/jolggureogi-score" title="졸꾸러기 지수 (2019년 1회 빡독 스피치)" target="_blank">졸꾸러기 지수 (2019년 1회 빡독 스피치)</a> </div>
 
 ## References
 https://ratsgo.github.io/from%20frequency%20to%20semantics/2017/06/01/LDA/
