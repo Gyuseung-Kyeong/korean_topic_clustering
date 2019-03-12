@@ -7,6 +7,10 @@
 ## 결과
 평소에 부족한 topic을 알게 되어 스스로 피드백을 할 수 있었음.
 
+## 스피치 영상
+적자생존, 적는 자 살아남는다?!(feat. 데일리리포트)  
+[![적자생존, 적는 자 살아남는다?!(feat. 데일리리포트)](https://img.youtube.com/vi/mTRDwbtzZ6U/0.jpg)](https://www.youtube.com/watch?v=mTRDwbtzZ6U "적자생존, 적는 자 살아남는다?!(feat. 데일리리포트)")
+
 ## SlideShare
 <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/GyuseungKyeong/jolggureogi-score" title="졸꾸러기 지수 (2019년 1회 빡독 스피치)" target="_blank">졸꾸러기 지수 (2019년 1회 빡독 스피치)</a> </div>
 
