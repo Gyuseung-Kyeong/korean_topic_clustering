@@ -1,3 +1,5 @@
+import re
+
 from collections import OrderedDict
 from operator import itemgetter
 
@@ -6,8 +8,33 @@ from konlpy.tag import Komoran
 from matplotlib import pyplot as plt
 from nltk import Text
 
-font_path = '/Library/Fonts/NanumBarunGothic.otf'
-plt.rc('font', family=fm.FontProperties(fname=font_path, size=50).get_name())
+# font_path = '/Users/gs/Library/Fonts/NanumBarunGothic.otf'
+# original
+# plt.rc('font', family=fm.FontProperties(fname=font_path, size=50).get_name())
+# plt.rc('font', family='NanumBarunGothicOTF')
+
+
+# case1
+# Create a font properties object
+# font = fm.FontProperties(fname=font_path)
+# Use the font in your plot
+# plt.rc('font', family=font.get_name())
+
+# case2
+# font_family = 'NanumBarunGothicOTF'
+# plt.rc('font', family=font_family)
+
+# case3
+# Check if the font is already in the font cache
+# if font_path not in fm.findSystemFonts():
+#     # If it's not, add it to the cache
+#     fm.fontManager.addfont(font_path)
+#     fm._rebuild()
+
+# Verify that the font is now available
+# print(fm.findfont('NanumBarunGothicOTF'))
+# plt.rc('font', family='NanumBarunGothicOTF')
+
 komoran = Komoran()
 
 
@@ -57,6 +84,16 @@ def get_dict_merged_strings(dict_strings):
     return dict_merged_strings
 
 
+def remove_emojis(text):
+    emoji_pattern = re.compile("["
+        u"\U0001F600-\U0001F64F"  # emoticons
+        u"\U0001F300-\U0001F5FF"  # symbols & pictographs
+        u"\U0001F680-\U0001F6FF"  # transport & map symbols
+        u"\U0001F1E0-\U0001F1FF"  # flags (iOS)
+                           "]+", flags=re.UNICODE)
+    return emoji_pattern.sub(r'', text)
+
+
 def get_nouns_from_topics(dict_merged_strings, komoran):
     """
     dict_merged_strings의 key를 key, dict_merged_strings의 value를 noun만 뽑은 list를 value로 반환하는 dict 생산.
@@ -66,8 +103,9 @@ def get_nouns_from_topics(dict_merged_strings, komoran):
     """
     dict_nouns = dict()
     for key in dict_merged_strings.keys():
-        dict_nouns[key] = komoran.nouns("\n".join(
-            [s for s in dict_merged_strings[key].split("\n") if s]))
+        print(key)
+        dict_nouns[key] = komoran.nouns(" ".join(
+            [s for s in remove_emojis(dict_merged_strings[key].replace('\u200b', '')).split("\n") if s]))
 
     return dict_nouns
 
